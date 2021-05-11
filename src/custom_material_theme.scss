@@ -1,0 +1,19 @@
+@import "~@angular/material/theming";
+
+@include mat-core();
+
+$tydy-hiring-challenge-primary: mat-palette($mat-blue);
+$tydy-hiring-challenge-accent: mat-palette($mat-blue-grey, A200, A100, A400);
+$tydy-hiring-challenge-warn: mat-palette($mat-red);
+
+$tydy-hiring-challenge-theme: mat-light-theme(
+  (
+    color: (
+      primary: $tydy-hiring-challenge-primary,
+      accent: $tydy-hiring-challenge-accent,
+      warn: $tydy-hiring-challenge-warn,
+    ),
+  )
+);
+
+@include angular-material-theme($tydy-hiring-challenge-theme);
