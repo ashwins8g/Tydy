@@ -1,0 +1,48 @@
+$box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.2);
+$page-heading-font-size: clamp(2rem, 4vmin, 3.5rem);
+$default-font-colour: #fafafa;
+
+.my-app-container {
+  background: linear-gradient(45deg, #49a09d, #5f2c82);
+  min-height: 100vh;
+
+  @at-root .my-app-header {
+    padding: 1rem;
+    text-align: center;
+    box-shadow: $box-shadow;
+
+    .my-app-page-heading {
+      margin: 0 auto;
+      color: $default-font-colour;
+      font-size: $page-heading-font-size;
+      font-weight: 600;
+      line-height: 1.75 * 4vmin;
+    }
+  }
+
+  @at-root .my-app-main-content {
+    max-width: 83.33333%;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @at-root .my-app-search-bar,
+      .my-app-user-table,
+      .my-app-export-button-container {
+      width: 100%;
+      text-align: center;
+    }
+
+    .my-app-export-button-container {
+      padding: 1.5rem;
+      margin: 2rem auto 0;
+
+      .mat-raised-button {
+        padding: 0.5rem 2rem;
+      }
+    }
+  }
+}

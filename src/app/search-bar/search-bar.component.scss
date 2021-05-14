@@ -1,0 +1,11 @@
+@import "./../app.component.scss";
+
+.my-app-form-control {
+  width: clamp(25rem, 50%, 50rem);
+  color: $default-font-colour;
+  padding: 1.5rem;
+}
+
+.clear-search-icon {
+  cursor: pointer;
+}

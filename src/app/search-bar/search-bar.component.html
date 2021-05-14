@@ -1,0 +1,20 @@
+<mat-form-field appearance="outline" class="my-app-form-control">
+  <mat-label>Search</mat-label>
+
+  <input
+    matInput
+    placeholder="Ex. Kunal"
+    #searchInput
+    [formControl]="typeAheadFormControl"
+  />
+
+  <mat-icon matSuffix *ngIf="!typeAheadFormControl.value"> search </mat-icon>
+  <mat-icon
+    matSuffix
+    *ngIf="typeAheadFormControl.value"
+    (click)="clearSearch()"
+    class="clear-search-icon"
+  >
+    clear
+  </mat-icon>
+</mat-form-field>

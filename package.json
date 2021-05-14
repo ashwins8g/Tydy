@@ -5,9 +5,6 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e",
     "dev:ssr": "ng run tydy-hiring-challenge:serve-ssr",
     "serve:ssr": "node dist/tydy-hiring-challenge/server/main.js",
     "build:ssr": "ng build --prod && ng run tydy-hiring-challenge:server:production",
@@ -28,6 +25,7 @@
     "@angular/router": "~11.2.13",
     "@nguniversal/express-engine": "^11.2.1",
     "express": "^4.15.2",
+    "mat-table-exporter": "^10.2.3",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.3"

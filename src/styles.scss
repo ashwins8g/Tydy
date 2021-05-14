@@ -1,5 +1,9 @@
 @import "./custom_material_theme.scss";
 
+html {
+  font-size: 10px;
+}
+
 html,
 body {
   height: 100%;
@@ -7,5 +11,9 @@ body {
 
 body {
   margin: 0;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+.mat-sort-header-container {
+  justify-content: center;
 }
