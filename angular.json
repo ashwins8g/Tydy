@@ -165,9 +165,7 @@
           "options": {
             "browserTarget": "tydy-hiring-challenge:build:production",
             "serverTarget": "tydy-hiring-challenge:server:production",
-            "routes": [
-              "/"
-            ]
+            "routes": ["/"]
           },
           "configurations": {
             "production": {}
